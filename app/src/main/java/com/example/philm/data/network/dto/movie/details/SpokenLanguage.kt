@@ -7,9 +7,9 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class SpokenLanguage(
     @SerializedName("english_name")
-    val english_name: String,
+    val english_name: String? = null,
     @SerializedName("iso_639_1")
-    val iso_639_1: String,
+    val iso_639_1: String? = null,
     @SerializedName("name")
-    val name: String
+    val name: String? = null
 ): Parcelable
