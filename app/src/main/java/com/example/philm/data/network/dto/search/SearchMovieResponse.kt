@@ -1,7 +1,7 @@
 package com.example.philm.data.network.dto.search
 
 import com.google.gson.annotations.SerializedName
-import com.example.philm.data.network.dto.movie.Result
+import com.example.philm.data.network.dto.movie.MovieResult
 
 data class SearchMovieResponse(
     @SerializedName("page")
@@ -11,7 +11,7 @@ data class SearchMovieResponse(
     val totalPages: Int? = null,
 
     @SerializedName("results")
-    val results: List<Result>? = null,
+    val results: List<MovieResult>? = null,
 
     @SerializedName("total_results")
     val totalResults: Int? = null

@@ -15,6 +15,7 @@ data class SeriesDetailsDto(
     @SerializedName("first_air_date")
     val firstAirDate: String? = null,
     val genres: List<Genre>? = null,
+    @SerializedName("homepage")
     val homepage: String? = null,
     val id: Int? = null,
     @SerializedName("in_production")
