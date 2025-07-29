@@ -1,11 +1,14 @@
 package com.example.philm.data.network.dto.movie.details
 
 import android.os.Parcelable
+import com.example.philm.data.network.dto.movie.MovieResponseDto
+import com.example.philm.data.network.dto.movie.credits.MovieCreditsDto
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
+import kotlinx.serialization.Serializable
 
-@Parcelize
-data class DetailResponseDto(
+@Serializable
+data class MovieDetailsDto(
     @SerializedName("original_language")
     val originalLanguage: String? = null,
 
@@ -79,5 +82,8 @@ data class DetailResponseDto(
     val homepage: String? = null,
 
     @SerializedName("status")
-    val status: String? = null
-) : Parcelable
+    val status: String? = null,
+    // AppendToResponse
+    val credits: MovieCreditsDto? = null,
+    val recommendations: MovieResponseDto? = null,
+)

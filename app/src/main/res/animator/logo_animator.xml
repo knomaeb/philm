@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000">
+    <propertyValuesHolder
+        android:propertyName="right_clip"
+        android:duration="250"
+        android:valueFrom="M 0 1200 L 237 1200 L 237 1200 L 0 1200 Z"
+        android:valueTo="M 0 1200 L 237 1200 L 237 0 L 0 0 Z"
+        android:valueType="pathType"
+        />
+    <propertyValuesHolder
+        android:propertyName="diag_clip"
+        android:startOffset="250"
+        android:duration="250"
+        android:valueFrom="M 0 0 L 661 0 L 661 0 L 0 0 Z"
+        android:valueTo="M 0 0 L 661 0 L 661 1201 L 0 1201 Z"
+        android:valueType="pathType"
+        />
+    <propertyValuesHolder
+        android:propertyName="left_clip"
+        android:startOffset="500"
+        android:duration="250"
+        android:valueFrom="M 0 1201 L 661 1201 L 661 1201 L 0 1201 Z"
+        android:valueTo="M 0 0 L 661 0 L 661 1201 L 0 1201 Z"
+        android:valueType="pathType"
+        />
+</objectAnimator>
